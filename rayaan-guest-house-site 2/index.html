@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rayaan Guest House</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background-color: #f9fafb;
+      color: #2d3436;
+    }
+    header {
+      background: linear-gradient(135deg, #cbd5e1, #e2e8f0);
+      height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #1e293b;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+    header h1 {
+      font-size: 3.5rem;
+    }
+    .section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+      border-radius: 16px;
+      background-color: #ffffff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      margin-top: 3rem;
+    }
+    .section h2 {
+      font-size: 2.25rem;
+      margin-bottom: 2rem;
+      text-align: center;
+      color: #334155;
+    }
+    .rooms {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .room-card {
+      background: #f1f5f9;
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+      padding: 2rem;
+      width: 300px;
+      transition: transform 0.3s;
+    }
+    .room-card:hover {
+      transform: scale(1.03);
+    }
+    .room-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: #3b4252;
+    }
+    .amenities {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+    .amenity {
+      background: #e6fffa;
+      padding: 1rem 1.25rem;
+      border-radius: 12px;
+      color: #2c7a7b;
+      font-weight: 600;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+    .gallery img {
+      width: 280px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 500px;
+      margin: 2rem auto 0;
+    }
+    input, textarea, button {
+      padding: 0.9rem;
+      border-radius: 8px;
+      border: 1px solid #d1d5db;
+      font-size: 1rem;
+    }
+    button {
+      background-color: #94a3b8;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background-color: #64748b;
+    }
+    iframe {
+      width: 100%;
+      height: 320px;
+      border: none;
+      margin-top: 2rem;
+      border-radius: 12px;
+    }
+    .reviews {
+      margin-top: 2rem;
+      text-align: center;
+    }
+    .reviews p {
+      font-style: italic;
+      margin-bottom: 1.25rem;
+    }
+    footer {
+      background: #cbd5e1;
+      color: #1e293b;
+      padding: 2rem;
+      text-align: center;
+    }
+    a {
+      color: #475569;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Rayaan Guest House</h1>
+  </header>
+
+  <div class="section">
+    <h2>Our Rooms</h2>
+    <div class="rooms">
+      <div class="room-card">
+        <h3>Standard Room</h3>
+        <p>₹1800 per night</p>
+        <p>Comfortable and cozy, perfect for solo travelers or couples.</p>
+      </div>
+      <div class="room-card">
+        <h3>Deluxe Room</h3>
+        <p>₹2500 per night</p>
+        <p>Spacious and elegant for a more luxurious stay.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="/mnt/data/WhatsApp Image 2025-06-14 at 17.41.51 (1).jpeg" alt="Room 1">
+      <img src="/mnt/data/WhatsApp Image 2025-06-14 at 17.41.53.jpeg" alt="Room 2">
+      <img src="/mnt/data/WhatsApp Image 2025-06-14 at 17.41.53 (2).jpeg" alt="Room 3">
+      <img src="/mnt/data/WhatsApp Image 2025-06-14 at 17.41.52.jpeg" alt="Room 4">
+      <img src="/mnt/data/WhatsApp Image 2025-06-14 at 17.41.52 (1).jpeg" alt="Room 5">
+      <img src="/mnt/data/WhatsApp Image 2025-06-14 at 17.41.51.jpeg" alt="Room 6">
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Amenities</h2>
+    <div class="amenities">
+      <div class="amenity">✅ Free Wi-Fi</div>
+      <div class="amenity">✅ Breakfast Included</div>
+      <div class="amenity">✅ Attached Bathrooms</div>
+      <div class="amenity">✅ Ceiling Fans</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Book a Room</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <textarea rows="4" placeholder="Message / Booking Details" required></textarea>
+      <button type="submit">Send Request</button>
+    </form>
+  </div>
+
+  <div class="section">
+    <h2>Find Us</h2>
+    <iframe src="https://maps.google.com/maps?q=Shalimar%20Srinagar&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+  </div>
+
+  <div class="section reviews">
+    <h2>What Our Guests Say</h2>
+    <p>"A peaceful stay in the heart of Srinagar. Highly recommended!"</p>
+    <p>"The deluxe rooms were clean and spacious. Staff were very helpful."</p>
+    <p>"Lovely location near Shalimar Gardens. Great hospitality!"</p>
+  </div>
+
+  <div class="section">
+    <h2>Contact Us</h2>
+    <p>📍 Zeal Lane, near Mirak Shah, Shalimar, Srinagar (KMR)</p>
+    <p>📞 Bilal: <a href="tel:9622232870">96222-32870</a></p>
+    <p>📞 Saroj: <a href="tel:9682311216">96823-11216</a></p>
+  </div>
+
+  <footer>
+    &copy; 2025 Rayaan Guest House. All rights reserved.
+  </footer>
+</body>
+</html>
